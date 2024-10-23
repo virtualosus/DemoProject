@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 99561557}
   - component: {fileID: 99561556}
   m_Layer: 0
-  m_Name: BadCapsule
+  m_Name: BadObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -851,7 +851,7 @@ GameObject:
   - component: {fileID: 1542057669}
   - component: {fileID: 1542057668}
   m_Layer: 0
-  m_Name: PlayerCube
+  m_Name: PlayerObject
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1034,7 +1034,7 @@ GameObject:
   - component: {fileID: 1886194344}
   - component: {fileID: 1886194343}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: BonusObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
