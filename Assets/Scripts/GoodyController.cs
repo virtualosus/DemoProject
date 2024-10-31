@@ -5,9 +5,16 @@ using UnityEngine;
 public class GoodyController : MonoBehaviour
 {
     public ScoreManager scoreManager;
+    public ObjectSpawner objectSpawner;
 
     public int points;
 
+
+    private void Start()
+    {
+        scoreManager = FindAnyObjectByType<ScoreManager>();
+        objectSpawner = FindAnyObjectByType<ObjectSpawner>();
+    }
 
     public void OnTriggerEnter(Collider other)
     {
@@ -16,6 +23,9 @@ public class GoodyController : MonoBehaviour
         {
             scoreManager.currentScore = scoreManager.currentScore + points;
             scoreManager.UpdateScoreInformation();
+
+            Destroy(this.gameObject);
+            objectSpawner.GoodySpawner();
         }
     }
 }
